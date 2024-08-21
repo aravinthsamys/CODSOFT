@@ -3,6 +3,8 @@ import mysql.connector
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QPushButton, 
                              QListWidget, QLineEdit, QLabel, QMessageBox, QInputDialog)
 
+# file run by database and pyqt5 ,mysql-connector-python
+
 class Todo(QMainWindow):
     def __init__(self):
         super().__init__()
