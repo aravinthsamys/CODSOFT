@@ -3,10 +3,6 @@ import mysql.connector
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QPushButton, 
                              QListWidget, QLineEdit, QLabel, QMessageBox, QInputDialog)
 
-
-#  pip install pyqt5
-#  pip install mysql-connector-python
-
 class Todo(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -14,11 +10,8 @@ class Todo(QMainWindow):
         self.connectionDB()
         self.createTable()
         self.viewtodo()
-        # self.addtodo()
-    
-
+  
     def frontend(self):
-        # for view application in python use (QApplication,QMainWindow)
 
         self.setWindowTitle('To-Do Application')
         self.setGeometry(550, 170, 350, 400)
@@ -26,7 +19,6 @@ class Todo(QMainWindow):
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
         self.layout = QVBoxLayout()
-
 
         self.inputbox=QLineEdit()
         self.layout.addWidget(self.inputbox)
@@ -47,7 +39,6 @@ class Todo(QMainWindow):
         self.delete_task_button.clicked.connect(self.deletetask)
         self.layout.addWidget(self.delete_task_button)
         
-
         self.central_widget.setLayout(self.layout)
 
     def connectionDB(self):
@@ -104,7 +95,6 @@ class Todo(QMainWindow):
                 QMessageBox.warning(self,'warning','empty field not allowed.')
             else:
                 QMessageBox.warning(self,'warning','Select item please.')
-
         except:
             print('update terminal error')
             
@@ -129,7 +119,6 @@ class Todo(QMainWindow):
             self.mydb.commit()
             self.viewtask.clear()
             self.viewtodo()
-          
         except:
               QMessageBox.warning(self,'warning','please, Select task from Todo list.')
 
