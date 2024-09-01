@@ -1,0 +1,48 @@
+.fontofh2{
+  font-family: "Pacifico", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 230%;
+  color: orangered;
+}
+.font1{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.phot{
+  width: 100%;
+}
+.font2{
+  font-weight: 400;
+}
+.ids{
+  display:none;
+  visibility: hidden;
+}
+.con1{
+  width: 65%;
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+.fontofh2{
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.con1{
+  width: 100%;
+}
+.phot{
+  width: 80%;
+
+}
+.ids{
+  display: block;
+  visibility: visible;
+}
+#mobi{
+  display:none;
+  visibility: hidden;
+}
+}

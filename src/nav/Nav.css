@@ -1,0 +1,45 @@
+
+nav {
+  border-bottom: 5px solid rgb(255, 108, 11);
+}
+.lis {
+  color: black;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-weight: 700;
+
+}
+
+.lis:hover {
+  border:2px solid rgb(255, 108, 11);
+  color: rgb(255, 114, 21);
+
+}
+.navbar{
+  --bs-navbar-toggler-icon-bg: url(menu.png);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border:1px solid white;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  ul{
+  border: 2px solid orange;
+  border-radius: 10px 0px 15px 25px;
+  }
+  #navbarNavDropdown{
+  position: absolute;
+  top:62px;left:55%;
+}
+.lis:hover {
+  border:none;
+  color: rgb(255, 114, 21);
+
+}
+}
