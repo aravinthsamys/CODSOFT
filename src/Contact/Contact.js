@@ -48,7 +48,7 @@ function sendEmail(e){
     <div className={`fade-in ${isVisible ? 'visible' : ''}`} style={fadeInStyle}>
     <div className="m-xl-5 m-4 mt-5 w-xl-50 p-xl-5">
       <h2 className='text-info text-center acon' style={{fontWeight:'700'}}>CONTACT ME </h2>
-      <form onSubmit={sendEmail} className='m-xl-5 mt-5 ccon' style={{borderRadius:'10px'}}>
+      <form onSubmit={sendEmail} action='https://portfoliocodsoftreact.netlify.app/' className='m-xl-5 mt-5 ccon' style={{borderRadius:'10px'}}>
         <div className="mb-3 ">
           <label htmlFor="name" className="form-label " style={{fontWeight:'700'}}>Name</label>
           <input
@@ -97,7 +97,7 @@ function sendEmail(e){
             required
           ></textarea>
         </div>
-        <button type="button" className="btn btn-primary bcon">Send</button> <br/><br/>
+        <button type="submit" className="btn btn-primary bcon">Send</button> <br/><br/>
         <p style={{color:'red'}}>* sample site</p>
       </form>
     </div> </div>
