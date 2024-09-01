@@ -98,7 +98,7 @@ function sendEmail(e){
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary bcon">Send</button> <br/><br/>
-        <p style={{color:'red'}}>* sample site</p>
+        <p style={{color:'red'}}>* After submit your mail have successfully reach us.. </p>
       </form>
     </div> </div>
   );
