@@ -7,7 +7,7 @@ task 1 -----> todo list As ( todo.py )
 task 2 -----> calculator As ( calci.py )
 
 
-task 3 -----> rock,paper,scissor Game As ( gamepsr.py )
+task 4 -----> rock,paper,scissor Game As ( gamepsr.py )
 
 
 install requirements :-
